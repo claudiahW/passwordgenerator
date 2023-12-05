@@ -17,32 +17,43 @@
     <div class="container">
     <h1>Password Generator</h1>
 
-
     <form>
+        <div class="mb-3 mt-3">
+        <input type="text" name="password" id="password">
+    </div>
+    <div class="mb-3">
         <label for="length">Password Length</label>
         <input type="number" name="length" id="length" min="8" max="20" value="8">
-        <br>
+    </div>
+    <br>
+        <div class="mb-3">
         <label for="uppercase">Include Uppercase Letters</label>
         <input type="checkbox" name="uppercase" id="uppercase" checked>
+    </div>
         <br>
-        <label for="lowercase">Include Lowercase</label>
+        <div class="mb-3">
+        <label for="lowercase">Include Lowercase Letters</label>
         <input type="checkbox" name="lowercase" id="lowercase" checked>
+    </div>
         <br>
+        <div class="mb-3">
         <label for="numbers">Include Numbers</label>
         <input type="checkbox" name="numbers" id="numbers" checked>
+    </div>
         <br>
+        <div class="mb-3">
         <label for="symbols">Include Symbols</label>
-        <input type="checkbox" name="symbols" id="symbols">
+        <input type="checkbox" name="symbols" id="symbols" checked>
+    </div>
         <br>
+        <div class="mb-3">
         <input type="submit" value="Generate Password">
+    </div>
         <br>
-        <input type="text" name="password" id="password">
+        
     </form>
-    <br>
+
 </div>
-  
-  
-  
   <script src="scripts.js"></script> 
 </body>
 </html>
